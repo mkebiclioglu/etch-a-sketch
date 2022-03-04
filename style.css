@@ -1,5 +1,5 @@
 :root {
-    --num-pixels: 0;
+    --num-pixels: 50;
 }
 
 html {
@@ -39,7 +39,7 @@ li {
 
 .menu__slider {
     cursor: pointer;
-    
+
 }
 
 .header {

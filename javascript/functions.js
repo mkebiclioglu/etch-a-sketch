@@ -1,18 +1,23 @@
-export const showPixels = (sideLen) => {
+export const showPixels = () => {
     const area = document.querySelector(".area");
     const root = document.documentElement;
+    let sideLen = document.querySelector(".menu__slider").value;
 
     let areaHeight = parseInt(area.offsetHeight);
     let numPixels = sideLen * sideLen;
 
     root.style.setProperty("--num-pixels", sideLen);
-    area.classList.add("area--pixelated");
+
+    for (let pixel of document.querySelectorAll(".pixel")) {
+        pixel.remove();
+    }
 
     for (let i = 0; i < numPixels; i++) {
         const singlePixel = document.createElement("div");
         singlePixel.classList.add("pixel");
         area.appendChild(singlePixel);
     }
+    console.log(area.children.length);
 };
 
 export const showSliderValue = () => {
