@@ -1,6 +1,10 @@
-
+import { showPixels } from "./functions.js";
 
 let githubIcon = document.querySelector(".icon-wrapper");
+
+window.addEventListener("load", (event) => {
+    showPixels();
+});
 
 githubIcon.addEventListener("mouseenter", ( event ) => {
     event.target.classList.add("fa-flip");

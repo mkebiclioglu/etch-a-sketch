@@ -1,3 +1,7 @@
+:root {
+    --num-pixels: 0;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -52,6 +56,16 @@ body {
     height: 400px;
     margin-top: -200px;
     background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.area--pixelated {
+    display: grid;
+    grid-template-columns: repeat(var(--num-pixels), 1fr);
+}
+
+.pixel {
+    border: 1px orangered solid;
+    background: black;
 }
 
 .footer {
