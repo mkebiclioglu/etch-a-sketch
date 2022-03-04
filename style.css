@@ -62,9 +62,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.2rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: lowercase;
 }
 
 .footer i::before {
     color: white;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
+
+
