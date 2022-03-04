@@ -1,5 +1,6 @@
 :root {
     --num-pixels: 50;
+    --corner-rounding: 10px;
 }
 
 html {
@@ -65,7 +66,9 @@ li {
     width: 400px;
     height: 400px;
     margin-top: -200px;
-    border-radius: 10px;
+    border-radius: var(--corner-rounding);
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .area--gradient {
@@ -84,7 +87,7 @@ li {
 
 .pixel--disappear {
     animation-name: reveal;
-    animation-duration: .3s;
+    animation-duration: .2s;
     animation-fill-mode: forwards;
 }
 

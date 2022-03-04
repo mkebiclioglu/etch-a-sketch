@@ -33,3 +33,7 @@ export const showImage = () => {
     area.classList.add("area--gradient");
 };
 
+const roundCorners = (sideLen) => {
+    
+};
+
