@@ -48,10 +48,10 @@ body {
 }
 
 .area {
-    border: 1px orangered solid;
     width: 400px;
     height: 400px;
     margin-top: -200px;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
 
 .footer {
