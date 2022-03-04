@@ -1,11 +1,13 @@
 export const showPixels = () => {
     let area = document.querySelector(".area");
     let root = document.documentElement;
+    let input = 50;
+
 
     let areaHeight = parseInt(area.offsetHeight);
-    let numPixels = 11*11;
+    let numPixels = input * input;
 
-    root.style.setProperty("--num-pixels", 11);
+    root.style.setProperty("--num-pixels", input);
     area.classList.add("area--pixelated");
 
     for (let i = 0; i < numPixels; i++) {

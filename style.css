@@ -44,6 +44,7 @@ body {
     color: black;
     position: absolute;
     transition: transform ease-in-out .25s;
+    cursor: pointer;
 }
 
 .header__settings:hover {
@@ -64,8 +65,8 @@ body {
 }
 
 .pixel {
-    border: 1px orangered solid;
-    background: black;
+    border: 1px black solid;
+    background: white;
 }
 
 .footer {
@@ -90,6 +91,7 @@ body {
 .footer i::before {
     color: white;
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
 
