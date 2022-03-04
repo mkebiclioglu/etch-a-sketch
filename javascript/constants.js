@@ -1,1 +1,0 @@
-export const STARTING_PIXEL_NUM = 50;

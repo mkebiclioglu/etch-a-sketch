@@ -65,6 +65,10 @@ li {
     width: 400px;
     height: 400px;
     margin-top: -200px;
+    border-radius: 10px;
+}
+
+.area--gradient {
     background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
 
@@ -74,9 +78,24 @@ li {
 }
 
 .pixel {
-    border: .2px black solid;
-    color: transparent;
-    background-clip: text;
+    background-color: black;
+    cursor: pointer;
+}
+
+.pixel--disappear {
+    animation-name: reveal;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .footer {

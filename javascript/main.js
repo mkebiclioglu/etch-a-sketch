@@ -1,8 +1,8 @@
 import { 
     showPixels,
-    showSliderValue
+    showSliderValue,
+    showImage
 } from "./functions.js";
-import { STARTING_PIXEL_NUM } from "./constants.js";
 
 const githubIcon = document.querySelector(".icon-wrapper");
 const slider = document.querySelector(".menu__slider");
@@ -10,11 +10,13 @@ const slider = document.querySelector(".menu__slider");
 window.addEventListener("load", (event) => {
     showPixels();
     showSliderValue();
+    showImage();
 });
 
 slider.addEventListener("change", (event) => {
     showPixels();
     showSliderValue();
+    showImage();
 });
 
 githubIcon.addEventListener("mouseenter", ( event ) => {
