@@ -1,6 +1,6 @@
 export const showPixels = () => {
-    let area = document.querySelector(".area");
-    let root = document.documentElement;
+    const area = document.querySelector(".area");
+    const root = document.documentElement;
     let input = 50;
 
 
@@ -11,7 +11,7 @@ export const showPixels = () => {
     area.classList.add("area--pixelated");
 
     for (let i = 0; i < numPixels; i++) {
-        let singlePixel = document.createElement("div");
+        const singlePixel = document.createElement("div");
         singlePixel.classList.add("pixel");
         area.appendChild(singlePixel);
     }
