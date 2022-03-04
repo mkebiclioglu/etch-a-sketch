@@ -4,9 +4,67 @@ html {
 
 *,
 *::before,
-*::after {
+*::after
+ {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
     font-size: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    height: 100vh;
+    width: 500px;
+    padding: 1rem 2.5rem 0 2.5rem;
+    margin: 0 auto;
+    border-radius: 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    height: 15vh;
+    display: flex;
+    width: 100%;
+}
+
+.header__settings {
+    font-size: 4rem;
+    color: black;
+    position: absolute;
+    transition: transform ease-in-out .25s;
+}
+
+.header__settings:hover {
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+.area {
+    border: 1px orangered solid;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+}
+
+.footer {
+    width: 100vw;
+    margin: 0;
+    height: 5vh;
+    background-color: #4466ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i::before {
+    color: white;
+    font-size: 30px;
 }
