@@ -2,7 +2,7 @@ import {
     showPixels,
     showSliderValue,
     showImage,
-    showMenu
+    toggleMenu
 } from "./functions.js";
 
 const githubIcon = document.querySelector(".icon-wrapper");
@@ -16,7 +16,7 @@ window.addEventListener("load", (event) => {
 }, false);
 
 menuIcon.addEventListener("click", (event) => {
-    showMenu();
+    toggleMenu();
 });
 
 slider.addEventListener("change", (event) => {

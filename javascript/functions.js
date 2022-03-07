@@ -22,10 +22,19 @@ export const showPixels = () => {
     }
 };
 
-export const showMenu = () => {
+export const toggleMenu = () => {
     const menu = document.querySelector(".menu");
-    menu.classList.add("menu--show");
-    console.log("Hi");
+    const menuIcon = document.querySelector(".header__settings");
+
+    if (menu.classList.contains("menu--show")) {
+        menu.classList.remove("menu--show");
+        menuIcon.classList.remove("header__settings--active");
+        menuIcon.innerText = "⚙️";
+    } else {
+        menu.classList.add("menu--show");
+        menuIcon.classList.add("header__settings--active");
+        menuIcon.innerText = "✕";
+    }
 };
 
 export const showSliderValue = () => {
