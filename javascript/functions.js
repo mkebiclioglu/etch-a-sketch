@@ -1,5 +1,5 @@
 import { 
-    gradients 
+    GRADIENTS 
 } from "./constants.js";
 
 export const showPixels = () => {
@@ -64,10 +64,10 @@ export const showGradientSelection = (event) => {
 
 export const addGradientChoices = () => {
     const gradientItems = document.querySelector(".gradient-items");
-    for (let i = 0; i < gradients.length; i++) {
+    for (let i = 0; i < GRADIENTS.length; i++) {
         const gradientItem = document.createElement("li");
         gradientItem.classList.add("gradient-item");
-        gradientItem.style.background = gradients[i];
+        gradientItem.style.background = GRADIENTS[i];
         if (i == 0) {
             gradientItem.classList.add("gradient-item--active");
         } 
