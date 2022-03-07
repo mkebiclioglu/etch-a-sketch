@@ -13,10 +13,10 @@ const menuIcon = document.querySelector(".header__settings");
 const gradientItem = document.querySelector(".gradient-items");
 
 window.addEventListener("load", (event) => {
+    addGradientChoices();
     showPixels();
     showSliderValue();
     showImage();
-    addGradientChoices();
 }, false);
 
 menuIcon.addEventListener("click", (event) => {

@@ -46,7 +46,8 @@ export const showSliderValue = () => {
 export const showImage = () => {
     const area = document.querySelector(".area");
     const root = document.documentElement;
-    root.style.setProperty("--background-gradient", GRADIENTS[0]);
+    const curGradientItem = document.querySelector(".gradient-item--active");
+    root.style.setProperty("--background-gradient", curGradientItem.style.background);
     area.classList.add("area--gradient");
 };
 
