@@ -38,10 +38,45 @@ li {
     justify-content: space-between;
 }
 
+.menu {
+    background-color: black;
+    width: 500px;
+    height: 15vh;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu__setting-container {
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
 .menu__slider {
     cursor: pointer;
-
 }
+
+.menu__slider-value {
+    font-size: 1.5rem;
+}
+
+.menu__setting-name {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -2.5rem;
+    background-color: black;
+    padding: 0 1rem;
+}
+
+
 
 .header {
     height: 15vh;
