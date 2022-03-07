@@ -4,7 +4,8 @@ import {
     showImage,
     toggleMenu,
     showGradientSelection,
-    addGradientChoices
+    addGradientChoices,
+    resetArea
 } from "./functions.js";
 
 const githubIcon = document.querySelector(".icon-wrapper");
@@ -12,6 +13,7 @@ const slider = document.querySelector(".menu__slider");
 const sliderValue = document.querySelector(".menu__slider-value");
 const menuIcon = document.querySelector(".header__settings");
 const gradientItem = document.querySelector(".gradient-items");
+const resetBtn = document.querySelector(".reset-btn");
 
 window.addEventListener("load", (event) => {
     addGradientChoices();
@@ -35,6 +37,10 @@ slider.oninput = () => {
 
 gradientItem.addEventListener("click", (event) => {
     showGradientSelection(event);
+}, false);
+
+resetBtn.addEventListener("click", () => {
+    resetArea();
 }, false);
 
 githubIcon.addEventListener("mouseenter", ( event ) => {

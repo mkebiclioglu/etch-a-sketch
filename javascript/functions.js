@@ -82,3 +82,10 @@ const updateImage = (event) => {
     root.style.setProperty("--background-gradient", event.target.style.background);
 };
 
+export const resetArea = () => {
+    const invisiblePixels = document.querySelectorAll(".pixel--disappear");
+    for (let i = 0; i < invisiblePixels.length; i++) {
+        invisiblePixels[i].classList.remove("pixel--disappear")
+    }
+};
+
