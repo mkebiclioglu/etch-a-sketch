@@ -76,7 +76,3 @@ export const addGradientChoices = () => {
 
 };
 
-const roundCorners = (sideLen) => {
-    
-};
-
