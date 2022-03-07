@@ -5,7 +5,8 @@ import {
     toggleMenu,
     showGradientSelection,
     addGradientChoices,
-    resetArea
+    resetArea,
+    showSettingsIcon
 } from "./functions.js";
 
 const githubIcon = document.querySelector(".icon-wrapper");
@@ -16,6 +17,7 @@ const gradientItem = document.querySelector(".gradient-items");
 const resetBtn = document.querySelector(".reset-btn");
 
 window.addEventListener("load", (event) => {
+    showSettingsIcon();
     addGradientChoices();
     showPixels();
     showSliderValue();

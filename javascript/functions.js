@@ -1,5 +1,7 @@
 import { 
-    GRADIENTS 
+    GRADIENTS,
+    GEAR_ICON,
+    EXIT_ICON
 } from "./constants.js";
 
 export const showPixels = () => {
@@ -29,11 +31,11 @@ export const toggleMenu = () => {
     if (menu.classList.contains("menu--show")) {
         menu.classList.remove("menu--show");
         menuIcon.classList.remove("header__settings--active");
-        menuIcon.innerText = "⚙️";
+        menuIcon.innerText = GEAR_ICON;
     } else {
         menu.classList.add("menu--show");
         menuIcon.classList.add("header__settings--active");
-        menuIcon.innerText = "✕";
+        menuIcon.innerText = EXIT_ICON;
     }
 };
 
@@ -88,4 +90,9 @@ export const resetArea = () => {
         invisiblePixels[i].classList.remove("pixel--disappear")
     }
 };
+
+export const showSettingsIcon = () => {
+    const settingsIcon = document.querySelector(".header__settings");
+    settingsIcon.innerText = GEAR_ICON;
+}
 
