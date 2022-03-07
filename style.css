@@ -83,7 +83,19 @@ li {
 
 .menu__slider {
     cursor: pointer;
+    appearance: none;
+    outline: none;
+    border-radius: var(--corner-rounding);
 }
+
+.menu__slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 1.5rem; /* Set a specific slider handle width */
+    height: 2.5rem; /* Slider handle height */
+    background: #4466ff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
 
 .menu__slider-value {
     font-size: 1.5rem;
