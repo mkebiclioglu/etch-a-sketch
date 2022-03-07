@@ -6,16 +6,12 @@ export const showPixels = () => {
     const area = document.querySelector(".area");
     const root = document.documentElement;
     let sideLen = document.querySelector(".menu__slider").value;
-
     let areaHeight = parseInt(area.offsetHeight);
     let numPixels = sideLen * sideLen;
-
     root.style.setProperty("--num-pixels", sideLen);
-
     for (let pixel of document.querySelectorAll(".pixel")) {
         pixel.remove();
     }
-
     for (let i = 0; i < numPixels; i++) {
         const singlePixel = document.createElement("div");
         singlePixel.classList.add("pixel");
@@ -49,6 +45,8 @@ export const showSliderValue = () => {
 
 export const showImage = () => {
     const area = document.querySelector(".area");
+    const root = document.documentElement;
+    root.style.setProperty("--background-gradient", GRADIENTS[0]);
     area.classList.add("area--gradient");
 };
 
