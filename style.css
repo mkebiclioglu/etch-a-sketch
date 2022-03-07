@@ -89,12 +89,12 @@ li {
 }
 
 .menu__slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none;
     appearance: none;
-    width: 1.5rem; /* Set a specific slider handle width */
-    height: 2.5rem; /* Slider handle height */
-    background: #4466ff; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 1.5rem;
+    height: 2.5rem;
+    background: #4466ff;
+    cursor: pointer;
   }
 
 .menu__slider-value {
