@@ -70,7 +70,14 @@ export const addGradientChoices = () => {
             gradientItem.classList.add("gradient-item--active");
         } 
         gradientItems.appendChild(gradientItem);
+        gradientItem.addEventListener("click", (event) => {
+            updateImage(event);
+        }, false);
     }
+};
 
+const updateImage = (event) => {
+    const root = document.documentElement;
+    root.style.setProperty("--background-gradient", event.target.style.background);
 };
 
