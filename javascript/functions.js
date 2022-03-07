@@ -48,6 +48,16 @@ export const showImage = () => {
     area.classList.add("area--gradient");
 };
 
+export const showGradientSelection = (event) => {
+    const gradientItems = document.querySelectorAll(".gradient-item");
+    for (let item of gradientItems) {
+        if  (item.classList.contains("gradient-item--active")) {
+            item.classList.remove("gradient-item--active");
+        }
+    }
+    event.target.classList.add("gradient-item--active");
+};
+
 const roundCorners = (sideLen) => {
     
 };

@@ -97,6 +97,30 @@ li {
     padding: 0 1rem;
 }
 
+.gradient-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.gradient-item {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    transition: all .4s ease-out;
+}
+
+.gradient-item--active {
+    border: 3px solid #4466ff ;
+}
+
+.gradient-item:hover {
+    transform: scale(1.1);
+}
+
 .header {
     height: 15vh;
     display: flex;
@@ -130,14 +154,14 @@ li {
 .area {
     width: 400px;
     height: 400px;
-    margin-top: -200px;
+    margin-top: -150px;
     border-radius: var(--corner-rounding);
     overflow: hidden;
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .area--gradient {
-    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
 
 .area--pixelated {
