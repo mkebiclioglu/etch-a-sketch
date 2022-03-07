@@ -1,3 +1,7 @@
+import { 
+    gradients 
+} from "./constants.js";
+
 export const showPixels = () => {
     const area = document.querySelector(".area");
     const root = document.documentElement;
@@ -56,6 +60,20 @@ export const showGradientSelection = (event) => {
         }
     }
     event.target.classList.add("gradient-item--active");
+};
+
+export const addGradientChoices = () => {
+    const gradientItems = document.querySelector(".gradient-items");
+    for (let i = 0; i < gradients.length; i++) {
+        const gradientItem = document.createElement("li");
+        gradientItem.classList.add("gradient-item");
+        gradientItem.style.background = gradients[i];
+        if (i == 0) {
+            gradientItem.classList.add("gradient-item--active");
+        } 
+        gradientItems.appendChild(gradientItem);
+    }
+
 };
 
 const roundCorners = (sideLen) => {

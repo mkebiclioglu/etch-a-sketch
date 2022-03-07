@@ -3,7 +3,8 @@ import {
     showSliderValue,
     showImage,
     toggleMenu,
-    showGradientSelection
+    showGradientSelection,
+    addGradientChoices
 } from "./functions.js";
 
 const githubIcon = document.querySelector(".icon-wrapper");
@@ -15,6 +16,7 @@ window.addEventListener("load", (event) => {
     showPixels();
     showSliderValue();
     showImage();
+    addGradientChoices();
 }, false);
 
 menuIcon.addEventListener("click", (event) => {

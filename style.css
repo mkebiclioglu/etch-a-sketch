@@ -1,6 +1,7 @@
 :root {
     --num-pixels: 50;
     --corner-rounding: 10px;
+    --background-gradient: black;
 }
 
 html {
@@ -161,7 +162,7 @@ li {
 }
 
 .area--gradient {
-    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    background: var(--background-gradient);
 }
 
 .area--pixelated {
