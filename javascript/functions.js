@@ -22,6 +22,12 @@ export const showPixels = () => {
     }
 };
 
+export const showMenu = () => {
+    const menu = document.querySelector(".menu");
+    menu.classList.add("menu--show");
+    console.log("Hi");
+};
+
 export const showSliderValue = () => {
     const slider = document.querySelector(".menu__slider");
     const sliderVal = document.querySelector(".menu__slider-value");
