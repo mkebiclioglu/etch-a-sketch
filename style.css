@@ -242,8 +242,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
     box-shadow: 2px 2px 3px 3px #153ef5;
+}
+
+.footer__githublink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
 }
 
 .footer p {
